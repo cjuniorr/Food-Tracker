@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Localizar FoodTrucks"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="chamaTelaPesquisa"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Bem vindo ao Food Tracker"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="322dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="O Food Tracker é o seu aplicativo geolocalizador de foodtrucks pela cidade."
+            android:id="@+id/textView4"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04" />
+
+        <TextView
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Ainda somos uma equipe pequena e estamos atuando somente na cidade de Fortaleza-CE, mas em breve estamos chegando em mais outras cidades do Brasil."
+            android:id="@+id/textView5"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Comece já sua experiência, localize e favorite seus foodtrucks preferidos."
+            android:id="@+id/textView6"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Equipe Food Tracker."
+            android:id="@+id/textView7"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</FrameLayout>
