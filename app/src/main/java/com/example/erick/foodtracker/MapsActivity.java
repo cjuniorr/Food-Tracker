@@ -9,12 +9,14 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private Marker myMarker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,15 +43,26 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
         LatLng fa7 = new LatLng(-3.770927, -38.483534);
         mMap.addMarker(new MarkerOptions().position(fa7).title("Você"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(fa7));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(16));
 
-        mMap.addMarker(new MarkerOptions()
+        myMarker = mMap.addMarker(new MarkerOptions()
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.truck))
                 .position(new LatLng(-3.755898, -38.489237))
                 .title("Klever's Food Nation"));
+
+
+                mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+                    @Override
+                    public boolean onMarkerClick(Marker marker) {
+                        if (marker.equals(myMarker))
+                            setContentView(R.layout.informacao_foodtruck);
+                        return false;
+
+                    }
+
+           });
     }
 }

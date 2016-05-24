@@ -13,7 +13,7 @@ public class SplashActivity extends AppCompatActivity implements Runnable {
         setContentView(R.layout.splashscreen);
 
         Handler handler = new Handler();
-        handler.postDelayed(this, 3000);
+        handler.postDelayed(this, 4000);
     }
 
 
