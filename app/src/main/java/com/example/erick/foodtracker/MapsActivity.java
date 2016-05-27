@@ -1,5 +1,6 @@
 package com.example.erick.foodtracker;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
@@ -51,14 +52,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         myMarker = mMap.addMarker(new MarkerOptions()
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.truck))
                 .position(new LatLng(-3.755898, -38.489237))
-                .title("Klever's Food Nation"));
+                .title("Food Nation"));
 
 
                 mMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                     @Override
                     public boolean onMarkerClick(Marker marker) {
                         if (marker.equals(myMarker))
-                            setContentView(R.layout.informacao_foodtruck);
+                            startActivity(new Intent(getBaseContext(), ScrollingActivity.class));
                         return false;
 
                     }

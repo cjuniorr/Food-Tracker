@@ -19,6 +19,18 @@
     <Button
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:text="Pesquisar por proximidade"
+        android:textSize="15dp"
+        android:id="@+id/button4"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.05"
+        android:layout_marginTop="30dp"
+        android:onClick="chamaTelaMapa"
+        />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
         android:text="Pesquisar por Food Truck"
         android:textSize="15dp"
         android:id="@+id/button3"
@@ -28,16 +40,6 @@
         android:onClick="chamaTelaPesquisaFoodtruck"
         />
 
-    <Button
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:text="Pesquisar por proximidade"
-        android:textSize="15dp"
-        android:id="@+id/button4"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.05"
-        android:layout_marginTop="30dp"
-        android:onClick="chamaTelaMapa"
-        />
+
 
 </LinearLayout>

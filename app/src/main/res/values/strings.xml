@@ -2,6 +2,8 @@
     <string name="app_name">Food Tracker</string>
     <string name="title_activity_login">Food Tracker</string>
     <string name="title_activity_sign_up">Cadastro</string>
+    <string name="nome_foodtruck">Food Nation</string>
+
 
     <!-- Strings related to login -->
     <string name="prompt_name">Nome</string>
@@ -22,5 +24,57 @@
     <string name="atualizar">Atualizar</string>
     <string name="logout">Logout</string>
     <string name="title_activity_update">UpdateActivity</string>
+    <string name="large_text">
+        "Proprietário: João das Neves\n"
+        "Telefone para contato: (85)99909-8440\n"
+        "E-mail para contato: joao.neves@gmail.com\n\n"
+
+        "Bateu a fome? vem pra Food Nation. :)\n\n"
+
+        "Deu vontade de comer aquela pizza? aquele cachorro quente? ou até aquele Big Burger? "
+        "Então segue nosso truck e vem se deliciar com as novidades da Food Nation. "
+        "Hoje contamos com uma exelente combinação de pratos que vão te deixar com água na boca.\n\n"
+
+        "Segue nosso cardápio atualizado:\n"
+        "Hamburgueres\n"
+        "• Taco Burger\n"
+        "• X-Burger Doritos\n"
+        "• Sweet Chilli Steak\n"
+        "• Pepper Truck\n"
+        "• Nutella Burger\n\n"
+
+        "Pizzas\n"
+        "• Frango Rock Sauce\n"
+        "• Monster Cheese\n"
+        "• A La Ipueiras \n"
+        "• Red Hot Chilli Pizza\n"
+        "• Nutella's Falls\n\n"
+
+        "HotDogs\n"
+        "• Chilli Beans\n"
+        "• Infinitus Bacon\n"
+        "• Macarrone Dog's show\n"
+        "• Japanese 15cm\n"
+        "• Food Nation's Dog\n\n"
+
+        "Gelatos\n"
+        "• Paleta Mexicana\n"
+        "• Mousse (Diversos Sabores)\n"
+        "• Bomba de açaí\n"
+        "• Mr. Freeze\n"
+        "• Winter is comming\n\n"
+
+        "Bebidas\n"
+        "• Vitaminas (Diversos Sabores)\n"
+        "• Milk Shakes (Diversos Sabores)\n"
+        "• Refrigerantes\n"
+        "• Água Mineral\n"
+        "• Cerveja\n\n"
+
+        "Com toda essa variedade não tem como ficar de fora."
+        "Vem com a gente!\n\n"
+
+        "Food Nation.\n\n"
+    </string>
 
 </resources>
